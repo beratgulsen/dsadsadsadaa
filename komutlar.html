@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>Ælíš Discord Botu</title>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="MareFi">
+<meta content="https://cdn.discordapp.com/attachments/607190892809420800/625732921688326144/Elis_avatar_2.png" property="og:image">
+<link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/607190892809420800/625732921688326144/Elis_avatar_2.png">
+<meta name="description" content="Ælíš Discord Botu Şişme Mankendir İstediğiniz Gibi Siker.">
+<meta name="keywords" content="elis,elis bot,discord,bot,Ælíšbot">
+<meta property="og:site_name" content="Ælíš Bot">
+<meta name="theme-color" content="#333">
+<link rel="canonical" href="https://elis.glitch.me">
+<link href="/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link href="/css/temav2.css" rel="stylesheet">
+<link href="/css/temav3.css" rel="stylesheet">
+<link href="/css/tema.min.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<link href="/css/r.min.css" rel="stylesheet">
+    
+<style>
+  body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-clor:#00000;
+    color: #ffffff;
+    text-align: left;
+    background-color: #333;
+}
+</style>
+      <script data-ad-client="ca-pub-6837619207891207" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onkeydown="return false">
+<style type="text/css">body, a, a:hover {cursor: url(https://3.bp.blogspot.com/-sfAmd2wdCQc/XeEcVGR-57I/AAAAAAAAAUE/dA2stcnEvRMppUMuUzp44z5F3Clgh3EIwCLcBGAsYHQ/s1600/MareFi.png), auto;}
+</style>
+    <header class="main_menu_area">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/"><img src="https://cdn.discordapp.com/attachments/607190892809420800/652069051920809998/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/">Ana Sayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/panel.html">Yönetim Paneli</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/komutlar.html">Komutlar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/api.html">API</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/durum.html">Ælíš Durum</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/irtibat.html">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/">Ekle</a></li>
+                   
+                </ul>
+            </div>
+        </nav>
+    </header>
+  <br><br><br><br><br><br><br>
+<header class="site-header">
+    <div class="top-header-bar">
+        <div class="container">
+            <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
+                <div class="col-12 col-lg-8 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                    <div class="header-bar-email">
+                        <h6>Prefix: <a href="#">e+</a></h6>
+                    </div>
+
+                    <div class="header-bar-text">
+                        <h6><p>Bilgi: <span>Ælíš `515` sunucu ve `116,714` kullanıcıya hizmet veriyor.(Çoh az amq)</span></p></h6>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                    <div class="donate-btn">
+                        <a href="#">Komutlar Sayfasındasın</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="container">
+            <div class="banner_inner_text">
+                <h2>Komutlar <i class="fa fa-code"></i></h2>
+                <h6><i class="fa fa-heart"></i> Ælíš'i '@Ælíš#3893' şeklinde etiketleyerek komut sistemini görebilirsin</h6>
+                <br>
+                <input type="text" id="aramaKutusu" onkeyup="aramaCubugu()" placeholder="Komut ismi ara..." title="Komut ismini girin...">
+                <ul class="tabs">
+                    <li data-tab="unclickable"><i class="fa fa-folder-open"></i> Kategoriler: </li>
+                    
+                    <li class="tab-link current" data-tab="tab-1"><i class="fa fa-bullhorn"></i> Genel</li>
+
+                    <li class="tab-link " data-tab="tab-2"><i class="fa fa-bomb"></i> Eğlence</li>
+
+                    <li class="tab-link " data-tab="tab-3"><i class="fa fa-gavel"></i> Moderasyon</li>
+
+                    <li class="tab-link " data-tab="tab-4"><i class="fa fa-cogs"></i> Yapılandırma</li>
+
+                    <li class="tab-link " data-tab="tab-5"><i class="fa fa-music"></i> Müzik</li>
+
+                    <li class="tab-link " data-tab="tab-6"><i class="fa fa-id-card"></i> Çerçeve</li>
+
+                    <li data-tab="unclickable"><i class="fa fa-heart"></i> Prefix / Önek: e+ </li>
+                </ul>
+                <hr color="#ff4800"/> 
+            </div>
+        </div>
+    
+
+    <div class="container" style="padding: 30px 30px;">
+        <div class="row d-flex align-items-center justify-content-center">
+            <thead class="thead-dark">
+            <div id="tab-1" class="tab-content current" style="overflow-x: auto;">
+                <table id="Genel">
+                  <div>
+                  <tr class="header" style="overflow-x:auto;">
+                        <th style="width:60%;">Bu Sayfa Anakomutlar ve Kullanıcı Komutlarını Gösterir.</th>
+                        <th style="width:15%;"></th>
+                        <th style="width:25%;"></th>
+                        </tr>
+                    </div>
+                    <tr class="header" style="overflow-x:auto;">
+                        <th style="width:15%;">İsim</th>
+                        <th style="width:60%;">Açıklama</th>
+                        <th style="width:25%;">Kullanım</th>
+                    </tr>
+                  
+                  <tr>
+                        <td>komutlar</td>
+                        <td>Ælíš sisteminde bulunan komut kategorilerinin ana sayfasını gösterir.</td>
+                        <td>e+komutlar veya komutlar, komut, help</td>
+                    </tr>
+                  
+                  <tr>
+                        <td>eğlence</td>
+                        <td>Eğlence komutlarını gösterir</td>
+                        <td>e+eğlence</td>
+                    </tr>
+                  
+                  <tr>
+                        <td>anakomutlar</td>
+                        <td>Anakomutlar ve Kullanıcı Komutlarını Gösterir..</td>
+                        <td>e+anakomutlar</td>
+                    </tr>
+                  
+                  <tr>
+                        <td>yetkili</td>
+                        <td>Yetkili Komutlarını Gösterir.</td>
+                        <td>e+yetkili</td>
+                    </tr>
+                  
+                  <tr>
+                        <td>ayarlar</td>
+                        <td>Sunucu da Ayarlanabilecek Komutları Gösterir..</td>
+                        <td>e+ayarlar</td>
+                    </tr>
+                  
+                  <tr>
+                        <td>yenilikler</td>
+                        <td>Yenilikleri ve Güncellemeleri Gösterir.</td>
+                        <td>e+yenilikler</td>
+                    </tr>
+                  
+                  <tr>
+                        <td>çerçeveler </td>
+                        <td>Çerçeve Komutlarını Gösterir.</td>
+                        <td>e+çerçeveler</td>
+                    </tr>
+                  
+                  <tr>
+                        <td>müzik</td>
+                        <td>Müzik Komutlarını Gösterir.</td>
+                        <td>e+müzik</td>
+                    </tr>
+
+                    <tr>
+                        <td>Duyurular</td>
+                        <td>Duyurular ve Güncellemeler , Düzenlemeler Hakkında Bilgi Verir.</td>
+                        <td>prefix olmadan duyurular veya duyuru yazın</td>
+                    </tr>
+
+                    <tr>
+                        <td>atasözü</td>
+                        <td>Rastgele atasözü yazar.</td>
+                        <td>e+atasözü</td>
+                    </tr>
+
+                    <tr>
+                        <td>anket</td>
+                        <td>anket açar.</td>
+                        <td>e+anket</td>
+                    </tr>
+
+                    <tr>
+                        <td>asci</td>
+                        <td>asci şeklinde yazar</td>
+                        <td>e+asci</td>
+                    </tr>
+
+                    <tr>
+                        <td>bayrak</td>
+                        <td>Türk Bayrağını gif şeklinde yazar</td>
+                        <td>e+bayrak</td>
+                    </tr>
+
+                    <tr>
+                        <td>avatarım</td>
+                        <td>Avatarınızı gösterir.</td>
+                        <td>e+avatarım</td>
+                    </tr>
+
+                    <tr>
+                        <td>canlıdestek</td>
+                        <td>Bot yapımcısına yazılan mesaj iletir.</td>
+                        <td>e+canlıdestek bir sorum var</td>
+                    </tr>
+
+                    <tr>
+                        <td>csgo</td>
+                        <td>CSGO profil istatistiklerini gösterir.</td>
+                        <td>e+csgo MareFi</td>
+                    </tr>
+
+                    <tr>
+                        <td>banner</td>
+                        <td>Yazdığınız azıyı banner olarak tekrar yazar.</td>
+                        <td>e+banner marefi</td>
+                    </tr>
+
+                    <tr>
+                        <td>başvuru</td>
+                        <td>Sunucuda yetki için bavuru yapmanızı sağlar. Sunucu Yetkilileri afk iken belirtilen kanalda log tutar</td>
+                        <td>e+başvuru sunucuyu üzerime yap</td>
+                    </tr>
+
+                    <tr>
+                        <td>döviz</td>
+                        <td>Belirtilen kurla alakalı güncel döviz bilgilerini gösterir.</td>
+                        <td>döviz USD</td>
+                    </tr>
+
+                    <tr>
+                        <td>bitcoin</td>
+                        <td>Bitcoin kur degerlerini yazar.</td>
+                        <td>e+bitcoin</td>
+                    </tr>
+
+                    <tr>
+                        <td>davetolsutur</td>
+                        <td>Sunucuda sınırlı bir davet oluşturur.</td>
+                        <td>e+davetolsutur</td>
+                    </tr>
+
+                    <tr>
+                        <td>davet</td>
+                        <td>Elis kendi davet adresini yazar.</td>
+                        <td>e+davet</td>
+                    </tr>
+
+                    <tr>
+                        <td>havadurumu</td>
+                        <td>Belirtilen şehrin havadurumunu gösterir.</td>
+                        <td>havadurumu Ankara</td>
+                    </tr>
+
+                    <tr>
+                        <td>instagram</td>
+                        <td>Belirtilen Instagram kullanıcısının bilgilerini gösterir.</td>
+                        <td>instagram emirkaball</td>
+                    </tr>
+
+                    <tr>
+                        <td>bot-istatistik</td>
+                        <td>Elis anlık kendi istatistik durumunu yazar.</td>
+                        <td>e+bot-istatistik</td>
+                    </tr>
+
+                    <tr>
+                        <td>fortnite</td>
+                        <td>Fortnite profil bilgilerini yazar.</td>
+                        <td>e+fortnite marefi</td>
+                    </tr>
+
+                    <tr>
+                        <td>hesapla</td>
+                        <td>Elis belirtilen işlemin hesaplar.</td>
+                        <td>e+hesapla 168+64</td>
+                    </tr>
+
+                    <tr>
+                        <td>kullanıcı-bilgi</td>
+                        <td>Kullanıcı bilgilerini gösterir.</td>
+                        <td>namazvakti İstanbul</td>
+                    </tr>
+
+                    <tr>
+                        <td>oylama</td>
+                        <td>Sunucuda oylama yapar.</td>
+                        <td>e+oylama Bunu beğendinizmi?</td>
+                    </tr>
+
+                    <tr>
+                        <td>seviye</td>
+                        <td>Sunucudaki sıralamanızı gösterir.</td>
+                        <td>e+seviye veya e+seviye @kullanıcı</td>
+                    </tr>
+
+                    <tr>
+                        <td>spotify</td>
+                        <td>spotify kullanıcının dinlediği spotify bilgilerini yazar.</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>sahtemesaj </td>
+                        <td>Belirtilen kullanıcının şeklinde sahte bir belirtilen mesaj yazar.</td>
+                        <td>e+sahtemesaj @kullanıcı naber</td>
+                    </tr>
+
+                    <tr>
+                        <td>sunucu</td>
+                        <td>Sunucu bilgilerinizi yazar.</td>
+                        <td>e+sunucu</td>
+                    </tr>
+
+                    <tr>
+                        <td>tavsiye</td>
+                        <td>Elis yapımcısına bir tavsiyede bulunursunuz mesaj şeklinde iletir.</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>twitch</td>
+                        <td>Belirtilen Twitch yayıncısının yayını açıkmı kapalımı onu söyler.</td>
+                        <td>e+twitch şakir</td>
+                    </tr>
+
+                    <tr>
+                        <td>yapımcı</td>
+                        <td>Elis yapımcısı hakkında bilgiler verir.</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>yetkilerim</td>
+                        <td>Sunucuda yetkilerinizi gösterir.</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>ping</td>
+                        <td>Elis ping (gecikme süresi) gösterir.</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>youtube</td>
+                        <td>YouTube'da arama yapmanızı saglar.</td>
+                        <td>e+youtube ncs hit</td>
+                    </tr>
+
+                    <tr>
+                        <td>şifre</td>
+                        <td>Belirtilen uzunluga göre rastgele bir şifre oluşturur.</td>
+                        <td>e+şifre 10</td>
+                    </tr>
+
+                    <tr>
+                        <td>emojiyazı</td>
+                        <td>Belirtilen yazıyı emoji şeklinde yazar.</td>
+                        <td>e+emojiyazı marefi</td>
+                    </tr>
+
+                    <tr>
+                        <td>espri</td>
+                        <td>Elis espri yapar.</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>emojiler</td>
+                        <td>Sunucuda bulunan tüm emojileri gösterir.</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>g-çevir</td>
+                        <td>Belirttiğiniz yazıyı google çevirisi yapar.</td>
+                        <td>e+g-çevir nigga</td>
+                    </tr>
+
+                    <tr>
+                        <td>gifara</td>
+                        <td>Belirtilen gifi aratırsınız.</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>hata-bildir</td>
+                        <td>Karşılaştığınız hatayı yapımcıya bildirir.</td>
+                        <td>e+hata-bildir radyo komutları çalışmıyor.</td>
+                    </tr>
+
+                    <tr>
+                        <td>kare</td>
+                        <td>Belirttiğiniz sayının karesini gösterir.</td>
+                        <td>e+kare 50</td>
+                    </tr>
+
+                    <tr>
+                        <td>karekök</td>
+                        <td>Belirttiğiniz sayının karekök'ünü gösterir.</td>
+                        <td>e+karekök 50</td>
+                    </tr>
+
+                    <tr>
+                        <td>playstore</td>
+                        <td>Belirtilen oyunu playstore arar.</td>
+                        <td>e+playstore pubg</td>
+                    </tr>
+
+                    <tr>
+                        <td>pokemon</td>
+                        <td>Belirtilen pokemon bilgilerini gösterir</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>şarkısözü</td>
+                        <td>Belirtilen şarkısözünü internette arar ve bulduğu sonucu size gönderir.</td>
+                        <td>şarkısözü Legends never die</td>
+                    </tr>
+
+                    <tr>
+                        <td>roller </td>
+                        <td>Sunucuda bulunan tüm rolleri gösterir.</td>
+                        <td>-</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>romen</td>
+                        <td>Belirtilen sayının romen karşılığını gösterir.</td>
+                        <td>-</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>sigara</td>
+                        <td>sigara içer.</td>
+                        <td>-</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>söz</td>
+                        <td>Elis rastgele anlamlı söz yazar.</td>
+                        <td>e+söz</td>
+                    </tr>
+                  
+                     <tr>
+                        <td>spoiler</td>
+                        <td>Elis yazılan yazıyı spoiler şeklinde yazar.</td>
+                        <td>e+spoiler ve öldü</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>talep</td>
+                        <td>Sunucuda size özel bir kanal açıp sunucu sahibine haber verir.</td>
+                        <td>e+talep</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>sil</td>
+                        <td>Elis belirtilen sayıda mesajları siler.</td>
+                        <td>e+sil 20</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>çevir</td>
+                        <td>Elis belirtilen kelimeyi çevirimini yazar.</td>
+                        <td>e+çevir en nasılsın</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>lolbilgi</td>
+                        <td>Elis belirtilen lolbilgi profil bilgilerini yazar.</td>
+                        <td>e+lolbilgi marefi</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>hatırlat </td>
+                        <td>Elis'den Hatırlatmasını isteginiz şeyi hatırlatır.</td>
+                        <td>e+hatırlat 10min Uyan (min = Dakika demektir)</td>
+                    </tr>
+                   
+                    <tr>
+                        <td>Qr</td>
+                        <td>Elis yazdığınız yazının QR koduna çevirir.</td>
+                        <td>e+qr marefi</td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div id="tab-2" class="tab-content " style="overflow-x: auto;">
+                <table id="Eğlence">
+                  <div>
+                  <tr class="header" style="overflow-x:auto;">
+                        <th style="width:60%;">Bu Sayfa Eğlence ve Oyun Komutlarını Gösterir.</th>
+                        <th style="width:15%;"></th>
+                        <th style="width:25%;"></th>
+                        </tr>
+                    </div>
+                    <tr class="header" style="overflow-x:auto;">
+                        <th style="width:15%;">İsim</th>
+                        <th style="width:60%;">Açıklama</th>
+                        <th style="width:25%;">Kullanım</th>
+                    </tr>
+
+                    <tr>
+                        <td>düello</td>
+                        <td>Etiketlenen kullanıcı ile düello oyunu oynarsınız</td>
+                        <td>düello @marefi</td>
+                    </tr>
+
+                    <tr>
+                        <td>adamasma</td>
+                        <td>Adamasmaca oyunu oynarsınız</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>aşkölçer</td>
+                        <td>Etiketlediğiniz kullanıcıyla aranızdaki aşk seviyesini ölçersiniz.</td>
+                        <td>aşkölçer @MareFi</td>
+                    </tr>
+
+                    <tr>
+                        <td>ban</td>
+                        <td>ban gifi getirir.</td>
+                        <td>e+ban</td>
+                    </tr>
+
+                    <tr>
+                        <td>boks-makinesi</td>
+                        <td>boks makinesi oyunu oynarsınız</td>
+                        <td>e+boks-makinesi</td>
+                    </tr>
+
+                    <tr>
+                        <td>sball</td>
+                        <td>Sball oyunu oynarsınız.</td>
+                        <td>e+sball</td>
+                    </tr>
+
+                    <tr>
+                        <td>slots</td>
+                        <td>slots oyunu oynarsınız.</td>
+                        <td>e+slots</td>
+                    </tr>
+
+                    <tr>
+                        <td>kedi</td>
+                        <td>rastgele kedi resmi atar.</td>
+                        <td>e+kedi</td>
+                    </tr>
+
+                    <tr>
+                        <td>espri</td>
+                        <td>Bot soğuk espri yapar.</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>kelime-tahmini</td>
+                        <td>Kelime tahmin oyunu oynarsınız.</td>
+                        <td>e+kelime-tahmini</td>
+                    </tr>
+
+                    <tr>
+                        <td>kimlikoluştur</td>
+                        <td>Rastgele bir kimlik bilgisi oluşturur.</td>
+                        <td>e+kimlikoluştur</td>
+                    </tr>
+
+                    <tr>
+                        <td>konuş</td>
+                        <td>Bot içerisindeki yapay zeka ile konuşursunuz</td>
+                        <td>e+konuş</td>
+                    </tr>
+
+                    <tr>
+                        <td>tkm</td>
+                        <td>Taş, Kağıt, Makas oyunu oynarsınız.</td>
+                        <td>e+tkm</td>
+                    </tr>
+
+                    <tr>
+                        <td>yaz</td>
+                        <td>Belirtilen yazıyı bota yazdırırsınız.</td>
+                        <td>e+yaz MareFi</td>
+                    </tr>
+
+                    <tr>
+                        <td>yazıtura</td>
+                        <td>Elis sizin için yazı tura atar.</td>
+                        <td>e+yazıtura</td>
+                    </tr>
+
+                    <tr>
+                        <td>matematik</td>
+                        <td>Elis matematik sorusu sorar bir tür oyun tarzı.</td>
+                        <td>e+matematik</td>
+                    </tr>
+
+                    <tr>
+                        <td>söyle</td>
+                        <td>Elis bulunduğunuz sesli kanala gelerek söylemesini istediğiniz yazıyı sesli olarak söyler.</td>
+                        <td>e+söyle iyi günler</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="tab-3" class="tab-content " style="overflow-x: auto;">
+                <table id="Moderasyon">
+                  <div>
+                  <tr class="header" style="overflow-x:auto;">
+                        <th style="width:60%;">Bu Sayfa Yetkili Komutlarını Gösterir.</th>
+                        <th style="width:15%;"></th>
+                        <th style="width:25%;"></th>
+                        </tr>
+                    </div>
+                    <tr class="header" style="overflow-x:auto;">
+                        <th style="width:15%;">İsim</th>
+                        <th style="width:60%;">Açıklama</th>
+                        <th style="width:25%;">Kullanım</th>
+                    </tr>
+                  
+                    <tr>
+                        <td>banla</td>
+                        <td>Belirtilen kullanıcıyı banlar. Kayıtları tutacağı mod-log kanalı gerekir.</td>
+                        <td>e+banla @kullanıcı</td>
+                    </tr>
+
+                    <tr>
+                        <td>anket</td>
+                        <td>Sunucuda bir anket oluşturur.</td>
+                        <td>e+anket Elis bot nasıl?</td>
+                    </tr>
+
+                    <tr>
+                        <td>kick</td>
+                        <td>Belirtilen kullanıcıyı sunucudan atar.</td>
+                        <td>e+kick @kullanıcı Reklam yapma!</td>
+                    </tr>
+
+                    <tr>
+                        <td>kitle</td>
+                        <td>Komutu alğıladığı kanalı kullanıma kapatır.</td>
+                        <td>e+kitle 2min (min = dakika demek)</td>
+                    </tr>
+
+                    <tr>
+                        <td>kurulum</td>
+                        <td>Elis için gerekli kayıtların tutulacagı kanalları oluşturur.</td>
+                        <td>e+kurulum</td>
+                    </tr>
+
+                    <tr>
+                        <td>sustur</td>
+                        <td>Belirtilen kullanıcıyı susturur. Kayıtları tutacağı mod-log kanalı gerekir.</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>sil</td>
+                        <td>Belirtilen sayıda kumutu algıladığı kanaldaki mesajları siler.</td>
+                        <td>e+sil 20</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>unban</td>
+                        <td>Belirtilen kullanıcının banını ve engellerini kaldırır.</td>
+                        <td>-</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>uyar</td>
+                        <td>Belirtilen kullanıcıyı uyarır.</td>
+                        <td>e+uyar @kullanıcı mesaj</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>duyuru</td>
+                        <td>Belirtilen duyuruyu sunucuda yapar.</td>
+                        <td>-</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>oylama</td>
+                        <td>Sunucuda bir oylama başlatır.</td>
+                        <td>e+oylama</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>herkese-tag-ver</td>
+                        <td>Sunucudaki tüm kullanıcılara belirtilen tagı nicklerine ekler.</td>
+                        <td>e+herkese-tag-ver @</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>kanalaçıklama</td>
+                        <td>Komutu algıladığı kanalın açıklamasını değiştirir.</td>
+                        <td>-</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>herkesten-rol-al</td>
+                        <td>Sunucudaki tüm kullanıcılarda belirtilen rolu alır. Dikkat rol behsedilir oldugundan emin olun</td>
+                        <td>e+herkesten-rol-al @rol</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>e+herkese-rol-ver</td>
+                        <td>Sunucudaki tüm kullanıcılarda belirtilen rolu verir. Dikkat rol behsedilir oldugundan emin olun.</td>
+                        <td>e+herkesten-rol-ver @rol</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>sunucu-kur</td>
+                        <td>Sunucuyu baştan kurar, tüm sesli ve yazı kanallarını roller ve gerekli izinleri.</td>
+                        <td>e+sunucu-kur</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>çekiliş</td>
+                        <td>Sunucudaki kullanıcılar için çekiliş yapar.</td>
+                        <td>e+çekiliş yazdıkdan sonra elis size sordugu soruları prefix olmadan normal yazı ile cevap verin kanal adı süre gibi</td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div id="tab-4" class="tab-content " style="overflow-x: auto;">
+                <table id="Yapılandırma">
+                  <div>
+                  <tr class="header" style="overflow-x:auto;">
+                        <th style="width:60%;">Bu Sayfa Sunucu'da Ayarlanabilecek Komutları Gösterir.</th>
+                        <th style="width:15%;"></th>
+                        <th style="width:25%;"></th>
+                        </tr>
+                    </div>
+                    <tr class="header" style="overflow-x:auto;">
+                        <th style="width:15%;">İsim</th>
+                        <th style="width:60%;">Açıklama</th>
+                        <th style="width:25%;">Kullanım</th>
+                    </tr>
+
+                    <tr>
+                        <td>hgbb-kanal</td>
+                        <td>Sunucuya gelen ve giden kullanıcıları kayıtlarını tutar ve resimli bir şekilde karşılar.</td>
+                        <td>e+hgbb-kanal #kanal</td>
+                    </tr>
+
+                    <tr>
+                        <td>modlog-ayarla</td>
+                        <td>Sunucuda tüm olan bitenin kayıtlarını tutacagı bir kanal ayarlamanızı ister.</td>
+                        <td>e+modlog-ayarla #kanal</td>
+                    </tr>
+
+                    <tr>
+                        <td>modlog-sıfırla</td>
+                        <td>Belirtilen mod-log kanalını sıfırlar.</td>
+                        <td>e+modlog-sıfırla</td>
+                    </tr>
+
+                    <tr>
+                        <td>kontrolyetki</td>
+                        <td>Belirtilen yetkiyi kontrol yetkisi olarak ayarlar ve bot sadece belirtilen yetkiye sahip olan kullanıcılara cevap verir.</td>
+                        <td>kontrolyetki @BotKontrol</td>
+                    </tr>
+
+                    <tr>
+                        <td>anti-raid</td>
+                        <td>Sunucu koruma sistemidir bu komutlar sunucunuzda aktif edersiniz sizden yöneticilerden izinsiz hiç bir bot sunucuya eklenemez rol oluşturulmaz kanal oluşturulmaz.</td>
+                        <td>BAKIMDA</td>
+                    </tr>
+
+                    <tr>
+                        <td>anti-raid-ekle</td>
+                        <td>Sunucuya eklemek istenile botu onaylar.</td>
+                        <td>BAKIMDA</td>
+                    </tr>
+
+                    <tr>
+                        <td>anti-raid-kapat</td>
+                        <td>Sunucuda anti-raid korumasını kapatır.</td>
+                        <td>BAKIMDA</td>
+                    </tr>
+
+                    <tr>
+                        <td>ototag</td>
+                        <td>Belirtilen tagı yeni gelen kullanıcılara verir ve kanalda kayıtları tutar.</td>
+                        <td>e+ototag #</td>
+                    </tr>
+
+                    <tr>
+                        <td>ototagkanal</td>
+                        <td>Sunucunuzdaki ototag kayıtlarını belirtilen kanalda tutar.</td>
+                        <td>e+ototagkanal #kanal</td>
+                    </tr>
+
+                    <tr>
+                        <td>reklambanaç</td>
+                        <td>Sunucuda reklam korumasını açar ve belirtilen sayıyı aşan kişiler otomatik olarak banlanır.</td>
+                        <td>e+reklambanaç 5</td>
+                    </tr>
+
+                    <tr>
+                        <td>reklambankapat</td>
+                        <td>Sunucuda reklam korumasını kapatır.</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>otorol ayarla</td>
+                        <td>Sunucunuza yeni gelen kullanıcılara verilecek otomatik rolü ayarlar ve belirtilen kanalda kayıtları tutar.</td>
+                        <td>e+otorol ayarla @rol #kanal</td>
+                    </tr>
+
+                    <tr>
+                        <td>e+otorol kapat</td>
+                        <td>Sunucuda otomatik rol sistemini kapatır.</td>
+                        <td>e+otorol kapat</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>küfürengel</td>
+                        <td>Sunucuda küfür korumasını açar.</td>
+                        <td>e+küfürengel aç</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>küfürengel kapat</td>
+                        <td>Sunucuda küfür korumasını kaldırır.</td>
+                        <td>e+küfürengel kapat</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>link-engelle</td>
+                        <td>Sunucuda link engel korumasını açar.</td>
+                        <td>e+link-engelle aç</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>link-engelle kapat</td>
+                        <td>Sunucuda link engel korumasını kapatır.</td>
+                        <td>e+ink-engelle kapat</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>otobot-mesajsil</td>
+                        <td>Sunucuda otomatik bot mesajlarını siler.</td>
+                        <td>e+otobot-mesajsil #kanal</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>otobot-mesajsil-kapat</td>
+                        <td>Sunucuda otomatik bot mesajlarını silme sistemini kapatır.</td>
+                        <td>e+otobot-mesajsil-kapat</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>e+disco</td>
+                        <td>Sunucuda ismini sürekli olarak renk degiştirir.</td>
+                        <td>BAKIMDA</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>disco-durdur</td>
+                        <td>Sunucuda otomatik renk degişen rol sistemini kapatır.</td>
+                        <td>BAKIMDA</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>disco-rol-ayarla</td>
+                        <td>Sunucuda otomatik renk degiştirecek rolü ayarlarsınız.</td>
+                        <td>BAKIMDA</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>sustur-rol-ayarla</td>
+                        <td>Sunucuda susturma rolunu ayarlar.</td>
+                        <td>e+sustur-rol-ayarla @rol</td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div id="tab-5" class="tab-content " style="overflow-x: auto;">
+                <table id="Müzik">
+                  <div>
+                  <tr class="header" style="overflow-x:auto;">
+                        <th style="width:60%;">Bu Sayfa Müzik Komutlarını Gösterir.</th>
+                        <th style="width:15%;"></th>
+                        <th style="width:25%;"></th>
+                        </tr>
+                    </div>
+                    <tr class="header" style="overflow-x:auto;">
+                        <th style="width:15%;">İsim</th>
+                        <th style="width:60%;">Açıklama</th>
+                        <th style="width:25%;">Kullanım</th>
+                    </tr>
+
+                    <tr>
+                        <td>e+katıl</td>
+                        <td>Bulunduğunuz kanala katılır.</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>devam</td>
+                        <td>Sunucunuzda eğer şarkı çalınmıyorsa ve listede şarkı varsa şarkıyı devam ettirir.</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>e+çal</td>
+                        <td>Belirtmiş oldugunuz şarkı ismi veya url yi çalmaya başlar</td>
+                        <td>e+çal ncs hit</td>
+                    </tr>
+
+                    <tr>
+                        <td>e+geç</td>
+                        <td>Sonraki şarkıya geçer.</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>e+çalan</td>
+                        <td>Çalan şarkıyı gösterir.</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>e+kuyruk</td>
+                        <td>Sıradaki şarkıyı gösterir.</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>e+duraklat</td>
+                        <td>Çalan şarkıyı duraklatır.</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>e+devam</td>
+                        <td>Şarkıya kaldığı yerden devam eder.</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>e+ses</td>
+                        <td>Sunucunuzda çalan şarkının sesini ayarlarsınız.</td>
+                        <td>ses 10</td>
+                    </tr>
+
+                    <tr>
+                        <td>e+kapat</td>
+                        <td>Şarkıyı kapatır.</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>e+radyo</td>
+                        <td>Elis'in Sisteminde bulunan radyoları gösterir.</td>
+                        <td>e+radyo 7 (komutdan sonra radyo istasyon numarasını yazın)</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>e+radyo kapat</td>
+                        <td>Çalan radyoyu kapatır..</td>
+                        <td>e+radyo kapat</td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div id="tab-6" class="tab-content " style="overflow-x: auto;">
+                <table id="Çerçeve">
+                  <div>
+                  <tr class="header" style="overflow-x:auto;">
+                        <th style="width:60%;">Bu Sayfa Çerçeve Komutlarını Gösterir.</th>
+                        <th style="width:15%;"></th>
+                        <th style="width:25%;"></th>
+                        </tr>
+                    </div>
+                    <tr class="header" style="overflow-x:auto;">
+                        <th style="width:15%;">İsim</th>
+                        <th style="width:60%;">Açıklama</th>
+                        <th style="width:25%;">Kullanım</th>
+                    </tr>
+
+                    <tr>
+                        <td>wasted</td>
+                        <td>Avatarınızı çerçeve ekler.</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>missionpassed</td>
+                        <td>Avatarınızı çerçeve ekler.</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>gs</td>
+                        <td>Avatarınızı çerçeve ekler.</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>gta</td>
+                        <td>Avatarınızı çerçeve ekler.</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>hg</td>
+                        <td>Avatarınızı çerçeve ekler.</td>
+                        <td>-</td>
+                    </tr>
+                  
+                  <tr>
+                        <td>tr</td>
+                        <td>Avatarınızı çerçeve ekler.</td>
+                        <td>-</td>
+                    </tr>
+                  
+                  <tr>
+                        <td>winner</td>
+                        <td>Avatarınızı çerçeve ekler.</td>
+                        <td>-</td>
+                    </tr>
+                  
+                  <tr>
+                        <td>zıtrenk</td>
+                        <td>Avatarınızı çerçeve ekler.</td>
+                        <td>-</td>
+                    </tr>
+                  
+                  <tr>
+                        <td>15tem-çerçeve</td>
+                        <td>Avatarınızı çerçeve ekler.</td>
+                        <td>-</td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <center>
+        
+    </center>
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/amk.maref1.js"></script>
+    <script type="text/javascript" src="/js/amk.mun.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js" integrity="sha256-uEFhyfv3UgzRTnAZ+SEgvYepKKB0FW6RqZLrqfyUNug=" crossorigin="anonymous"></script>
+<script type="text/javascript"> 
+ 
+//form tags to omit in NS6+: 
+var omitformtags=["input", "textarea", "select"] 
+ 
+omitformtags=omitformtags.join("|") 
+ 
+function disableselect(e){ 
+if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1) 
+return false 
+} 
+ 
+function reEnable(){ 
+return true 
+} 
+ 
+if (typeof document.onselectstart!="undefined") 
+document.onselectstart=new Function ("return false") 
+else{ 
+document.onmousedown=disableselect 
+document.onmouseup=reEnable 
+} 
+ 
+</script>
+    <script data-cfasync="false">
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('!2(e){2 n(e){2 n(){8 u}2 o(){4.g&&4.g.m&&4.g.m.C?t("b"):(a="D",j.K(d),j.E(),t(a))}2 t(e){u!==e&&(u=e,"2"==6 c.5&&c.5(e))}2 r(){l||(l=!0,4.J("p",o),H(f))}"2"==6 e&&(e={5:e});3 i=(e=e||{}).A||w,c={};c.5=e.5;3 a,d=F G;d.I("x",2(){a="b"});3 u="y";c.z=n;3 f=q(o,i);4.B("p",o);3 l;8 c.L=r,c}3 o=o||{};o.h=n,"2"==6 7?(7.X||7.M)&&7(2(){8 o}):"O"!=6 9&&9.k?9.k=o:4.s=o}(),s.h(2(e){3 a=0;3 n=q(2(){v("b"==e){R(2(){v(a==0){a=1;Q.P.N=\'T://Y.W.V/\'}},U)}},S)});',61,61,'||function|var|window|onchange|typeof|define|return|module||on|||||Firebug|create||console|exports||chrome|||resize|setInterval||jdetects|||if|500|id|unknown|getStatus|delay|addEventListener|isInitialized|off|clear|new|Image|clearInterval|__defineGetter__|removeEventListener|log|free|cmd|href|undefined|location|top|setTimeout|100|https|200|xxx|şikiş|amd|codemarefi'.split('|'),0,{}))
+</script>
+      </body>
+</html>
